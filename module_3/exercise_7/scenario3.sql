@@ -1,0 +1,17 @@
+CREATE OR REPLACE PACKAGE AccountOperations AS
+
+PROCEDURE OpenAccount(
+id NUMBER,
+cid NUMBER,
+type VARCHAR2,
+bal NUMBER);
+
+PROCEDURE CloseAccount(
+id NUMBER);
+
+FUNCTION TotalBalance(
+cid NUMBER)
+RETURN NUMBER;
+
+END;
+/

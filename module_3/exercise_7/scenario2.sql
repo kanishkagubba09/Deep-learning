@@ -1,0 +1,20 @@
+CREATE OR REPLACE PACKAGE EmployeeManagement AS
+
+PROCEDURE HireEmployee(
+id NUMBER,
+name VARCHAR2,
+pos VARCHAR2,
+sal NUMBER,
+dept VARCHAR2,
+hdate DATE);
+
+PROCEDURE UpdateEmployee(
+id NUMBER,
+sal NUMBER);
+
+FUNCTION AnnualSalary(
+id NUMBER)
+RETURN NUMBER;
+
+END;
+/
