@@ -1,3 +1,4 @@
+package module_1;
 import java.util.*;
 
 // Singleton
